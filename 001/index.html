@@ -7,12 +7,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Recreate | 001</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+  </style>
 
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <main data-scroll-container></main>
+  <main data-scroll-container>
+    <header class="nav-header">
+      <div class="site-name">
+        <h1>
+          Basic <span>&reg;</span>
+        </h1>
+        <p class="site-name__tag">(part of <span>dept</span>)</p>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-list__item">Work</li>
+          <li class="nav-list__item">About</li>
+          <li class="nav-list__item">News</li>
+          <li class="nav-list__item">Thinking</li>
+          <li class="nav-list__item">Pledge</li>
+          <li class="nav-list__item">Careers</li>
+          <li class="nav-list__item">Contact</li>
+        </ul>
+      </nav>
+      <button><svg width="23" height="5" viewBox="0 0 23 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="20.5" cy="2.5" r="2.5" fill="black" />
+          <circle cx="11.5" cy="2.5" r="2.5" fill="black" />
+          <circle cx="2.5" cy="2.5" r="2.5" fill="black" />
+        </svg>
+      </button>
+    </header>
+  </main>
 
   <script src="/dist/locomotive-scroll.min.js"></script>
   <script>

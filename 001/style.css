@@ -11,7 +11,9 @@ html {
   box-sizing: border-box
 }
 
-*, :after, :before {
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit
 }
 
@@ -22,5 +24,72 @@ body, html {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  margin: auto;
+  max-width: 1780px;
   background: var(--primary);
+  padding: 0 calc(1.5rem + 2vw);
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.nav-header {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+}
+
+.nav-list__item {
+  list-style-type: none;
+  text-transform: uppercase;
+  padding: 0 2rem;
+}
+
+.site-name {
+  position: relative;
+  width: fit-content;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+}
+
+.site-name h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.site-name h1>span:first-child {
+  top: 0.5rem;
+  line-height: 1;
+  right: -1.25rem;
+  font-weight: 400;
+  font-size: 2.5rem;
+  position: absolute;
+}
+
+.site-name__tag {
+  font-weight: 400;
+  margin-top: -0.5rem;
+  font-size: 0.875rem;
+}
+
+.site-name__tag span {
+  font-weight: 900;
+}
+
+.nav-header button {
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  appearance: none;
+  background: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav-list {
+    display: none;
+  }
 }
