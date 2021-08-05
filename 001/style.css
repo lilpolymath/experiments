@@ -1,0 +1,26 @@
+:root {
+  --primary: #e5e5e5;
+  --secondary: #262523;
+  --accent: #F2CECE;
+  --black: #000000;
+  --font-secondary: #F2CFCE;
+  --white: #FFFFFF;
+}
+
+html {
+  box-sizing: border-box
+}
+
+*, :after, :before {
+  box-sizing: inherit
+}
+
+body, html {
+  min-height: 100%
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary);
+}
