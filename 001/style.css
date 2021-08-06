@@ -98,7 +98,7 @@ nav ul {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: calc(3.5rem + 2vw) 0 3rem;
+  padding: calc(3.5rem + 2vw) 0 calc(1.75rem + 1vw);
 }
 
 .main-header h1 {
@@ -131,13 +131,64 @@ nav ul {
 }
 
 .intro-image {
+  padding: calc(3.5rem + 2vw) 0 calc(1.75rem + 1vw);
+}
+
+.intro-image figure {
   width: 100%;
   height: 100%;
   max-height: 600px;
+  perspective: 1000px;
+  /* padding: calc(3.5rem + 2vw) 0; */
 }
 
 .intro-image img {
+  position: relative;
+  /* opacity: 0; */
   width: 100%;
   height: 100%;
-  /* max-height: 100%; */
+  /* transition: all 4s; */
+  /* transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(40deg) rotateY(0deg) rotateZ(0deg); */
+}
+
+.appear img {
+  opacity: 1;
+  transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+/* .intro-image.appear img {
+  transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+} */
+
+@keyframes test {
+  from {
+    transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(-330deg) rotateY(0deg) rotateZ(0deg);
+  }
+  to {
+    transform: translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+
+.intro {
+  padding-bottom: 40vh;
+}
+
+.hero__image {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section--intro {
+  position: relative;
+  justify-content: center;
 }
